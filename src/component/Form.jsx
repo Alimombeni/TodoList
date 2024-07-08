@@ -3,7 +3,7 @@ import Button from "./Button.jsx";
 import './form.css';
 import {useState} from "react";
 import List from "./List.jsx";
-function Form ({work , setwork,addWork}) {
+function Form ({work , setwork,addWork , onDelete , works}) {
 
 
 function handleSubmit(e){
@@ -26,7 +26,7 @@ return (
 
             <Button>+</Button>
         </div>
-        <List />
+        <List works={works} onDelete={onDelete} />
     </form>
 )
 }

@@ -20,7 +20,9 @@ function App() {
     function addHnadle (newwork) {
         setWorks((prevWork) =>[...prevWork , newwork])
     }
-
+function handleDelete (id) {
+        setWorks((prevwork)=>prevwork.filter((work)=>(work.id !== id)))
+}
   return (
       <>
         <div className='app'>
@@ -28,6 +30,8 @@ function App() {
         <Form addWork={addHnadle}
         work={work}
         setwork={setWork}
+              works={works}
+              onDelete={handleDelete}
 
         />
         </div>
