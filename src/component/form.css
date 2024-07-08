@@ -1,0 +1,27 @@
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+.form_input{
+    padding: 15px;
+    border-radius: 5px;
+    border-style: none;
+
+}
+.form h1{
+    font-family: Roboto , sans-serif;
+    color: #5e5e5e;
+    text-align: left;
+}

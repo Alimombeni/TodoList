@@ -1,0 +1,17 @@
+
+
+.btn{
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: #727272;
+    border-style: none;
+    border-radius: 3px;
+
+
+}
+.btn:hover{
+    background-color: #5e5e5e;
+    transition: ease-in-out 0.3s;
+
+}

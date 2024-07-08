@@ -1,0 +1,17 @@
+
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 300px; /* عرض ثابت */
+    max-width: 300px; /* حداکثر عرض */
+    min-width: 300px; /* حداقل عرض */
+    margin: 0 auto; /* مرکز کردن المان */
+    padding: 20px;
+
+
+
+}
