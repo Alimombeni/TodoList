@@ -3,14 +3,24 @@ import Button from "./Button.jsx";
 import './form.css';
 import {useState} from "react";
 import List from "./List.jsx";
-function Form () {
+function Form ({work , setwork,addWork}) {
 
 
+function handleSubmit(e){
+    e.preventDefault()
 
+    const newworkObj={
+    id:Date.now(),
+        name:work,
+
+    }
+    addWork(newworkObj)
+    setwork('')
+}
 
 
 return (
-    <form  className='form'>
+    <form onSubmit={handleSubmit}  className='form'>
             <h1>To-Do List</h1>
         <div className='header'>
 

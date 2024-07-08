@@ -13,12 +13,23 @@ const mydata=[
 ]
 
 function App() {
+    const [work ,setWork] =useState('')
+    const [works , setWorks] = useState(mydata)
+
+    //function for add newobject data from Form to Data state (work)=> (works)
+    function addHnadle (newwork) {
+        setWorks((prevWork) =>[...prevWork , newwork])
+    }
 
   return (
       <>
         <div className='app'>
         {/*   all functional pass with props to form */}
-        <Form/>
+        <Form addWork={addHnadle}
+        work={work}
+        setwork={setWork}
+
+        />
         </div>
       </>
   )
